@@ -3,9 +3,12 @@ import requests
 # Define API details
 url = "https://twitter241.p.rapidapi.com/search-v2"
 
+load_dotenv()
+RAPIDAPI_KEY = os.getenv("RAPIDAPI_KEY")
+
 headers = {
     "x-rapidapi-host": "twitter241.p.rapidapi.com",
-    "x-rapidapi-key": "6b22ffb88amshca0ce5cdc12a862p18b79fjsn417f8d2bf56b"
+    "x-rapidapi-key": RAPIDAPI_KEY  # Securely loaded
 }
 
 # Define query parameters
