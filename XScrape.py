@@ -14,7 +14,7 @@ headers = {
 # Define query parameters
 query_params = {
     "type": "Latest",  # Change to 'Latest' to get recent tweets
-    "count": 10,       # Request 50 tweets
+    "count": 1000,       # Request 50 tweets
     "query": "$TSLA$"
 }
 

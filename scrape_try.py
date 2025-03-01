@@ -5,6 +5,19 @@ import re
 import os
 from dotenv import load_dotenv
 
+# Andet data eller en ny model til at predicte
+# lavde flere modeller og se hvilken der er bedst
+# Finder en arkitektur som ikke er anvendt før og se om den arkitektur jeg laver har en god performance. 
+# Huggingface har måske modeller der kan bruges - mit eget bidrag 
+# tag en lignende model og finetune med det tekst jeg selv tager.
+# et bidrag kunne også være et finde data fra flere steder som ikke er brugt. 
+# Huggingface har en model der analyserer sentimentant af financial tekst. 
+# Noget overlap over det jeg har skrevet om og de aktier jeg har med
+# Udvælg bestemte aktier - f.eks. dem som har høj volitalitet. 
+# jeg har en antagelse om at nogle aktier ikke har den aktiekurs de burde have. 
+# find ud af hvad et passende dataset størrelse er ud fra litteraturen. 
+# Til næste gang have en udvidet indholdsfortegnelse med. 
+
 # Define API details
 url = "https://twitter241.p.rapidapi.com/search-v2"
 
@@ -19,7 +32,7 @@ headers = {
 # Define query parameters
 query_params = {
     "type": "Latest",  # Fetch latest tweets
-    "count": 20,       # Request 50 tweets
+    "count": 2000,       # Request 50 tweets
     "query": "$TSLA$"
 }
 
